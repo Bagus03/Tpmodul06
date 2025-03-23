@@ -2,7 +2,7 @@
 
 public class SayaTubeVideo
 {
-    private static Random rand = new Random(); // Menghindari masalah ID yang sama karena pembuatan instance Random di setiap objek
+    private static Random rand = new Random(); 
     private int id;
     private string judulVideo;
     private int playCount;
@@ -18,7 +18,7 @@ public class SayaTubeVideo
             throw new ArgumentException("Judul video tidak boleh lebih dari 100 karakter.");
         }
 
-        this.id = rand.Next(10000, 99999); // ID tetap unik dalam range tertentu
+        this.id = rand.Next(10000, 99999); 
         this.judulVideo = judulVideo;
         this.playCount = 0;
     }
@@ -50,11 +50,10 @@ public class SayaTubeVideo
 
     public void PrintVideoDetails()
     {
-
         Console.WriteLine($"ID: {this.id}");
         Console.WriteLine($"Judul Video: {this.judulVideo}");
         Console.WriteLine($"Play Count: {this.playCount}");
 
-
     }
+
 }
