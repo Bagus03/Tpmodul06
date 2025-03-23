@@ -50,8 +50,11 @@ public class SayaTubeVideo
 
     public void PrintVideoDetails()
     {
+
         Console.WriteLine($"ID: {this.id}");
         Console.WriteLine($"Judul Video: {this.judulVideo}");
         Console.WriteLine($"Play Count: {this.playCount}");
+
+
     }
 }
